@@ -1,0 +1,130 @@
+.movies__films {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  min-height: 90vh;
+  height: 100%;
+  padding: 4rem 6rem;
+  background: linear-gradient(
+    180deg,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 100%
+  );
+  margin: 0;
+  overflow: auto;
+}
+
+.movies__films-pagename {
+  margin-left: 16px;
+}
+
+.movies__films-pagename h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  color: #d3d3d3;
+}
+
+.movies__films-gridbox {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 4rem;
+}
+
+.movies__films-gridbox__card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: transparent;
+}
+
+.movies__films-gridbox__card-image {
+  min-width: 170px;
+  width: 100%;
+  height: 67.3vh;
+  min-height: 280px;
+  max-height: 318.8px;
+  overflow: hidden; /* Paslėpia perlenkimus */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.movies__films-gridbox__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Užtikrina, kad nuotrauka užpildys visą vietą ir jos nereikės ištempti */
+}
+
+.movies__films-gridbox__card h1 {
+  margin-top: 0.3rem;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.movies__films-gridbox-cantegorys {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.movies__films-gridbox__card h3 {
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 28px;
+  color: #d3d3d3;
+}
+
+@media screen and (max-width: 1350px) {
+  .movies__films-gridbox {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .movies__films-gridbox {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .movies__films-pagename h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .movies__films {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .movies__films-gridbox {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .movies__films {
+    align-items: center;
+    z-index: -1;
+    min-height: 100vh;
+  }
+
+  .movies__films-gridbox {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+  }
+
+  .movies__films-gridbox__card-image {
+    min-width: 170px;
+    max-width: 410px;
+    min-height: 360px;
+  }
+
+}

@@ -1,0 +1,40 @@
+.front__brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.front__brand div {
+  flex: 1;
+  max-width: 150px;
+  min-width: 120px;
+  margin: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front__brand img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .front__brand div {
+    flex: 1;
+    max-width: 130px;
+    min-width: 100px;
+    margin: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .front__brand div {
+    flex: 1;
+    max-width: 100px;
+    min-width: 80px;
+    margin: 0.6rem;
+  }
+}

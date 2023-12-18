@@ -1,0 +1,145 @@
+.movies__searchbar {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  background: rgba(0, 40, 83, 1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px;
+}
+
+.movies__searchbar-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.movies__searchbar-search input {
+  flex: 2;
+  width: 100%;
+  max-width: 760px;
+  min-height: 50px;
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 27px;
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  border-radius: 5px;
+  padding: 0 2rem;
+  outline: none;
+  color: #fff;
+}
+
+.movies__searchbar-search .search-icon {
+  color: #fff;
+  position: absolute;
+  font-size: 20px;
+
+  left: 10px;
+  cursor: pointer;
+}
+
+.movies_searchbar-person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 50px;
+  top: 48px;
+}
+
+.movies_searchbar-person img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.movies_searchbar-person h1,
+.movies_searchbar-person__small h1 {
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: -0.04em;
+}
+
+.movies_searchbar-person__small {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.movies_searchbar-person__small img {
+  height: 100%;
+  width: 100%;
+}
+
+.movie__searchbar-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .movies__searchbar-search input {
+    max-width: 570px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .movies__searchbar {
+    padding: 2rem 4rem;
+  }
+
+  .movies__searchbar-search input {
+    min-height: 40px;
+    max-width: 520px;
+  }
+
+  .movies_searchbar-person img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .movies_searchbar-person h1 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .movies__searchbar-search input {
+    max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .movies__searchbar {
+    position: fixed;
+    top: 0;
+    padding: 2rem;
+  }
+
+  .movies__searchbar-search {
+    margin-left: 5.5%;
+  }
+
+  .movies_searchbar-person {
+    display: none;
+  }
+
+  .movie__searchbar-icon {
+    display: block;
+  }
+
+  .movie__searchbar-icon .arrowIcon {
+    color: #fff;
+    font-size: 25px;
+  }
+}

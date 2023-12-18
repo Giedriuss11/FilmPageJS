@@ -1,0 +1,20 @@
+.front__footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.front__footer-copyright p {
+  font-family: var(--font-family);
+  font-size: 17px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 650px) {
+    .front__footer-copyright p {
+        font-size: 14px;
+        line-height: 18px;
+      }
+}
+

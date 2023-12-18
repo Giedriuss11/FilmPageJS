@@ -1,0 +1,127 @@
+section {
+  width: 100%;
+  max-width: 420px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  box-shadow:rgba(184, 184, 185, 0.2)  0px 3px 8px;
+}
+
+.section__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__name h1 {
+  font-size: 39px;
+  font-weight: 800;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+a,
+a:visited {
+  font-family: var(--font-family);
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline solid #fff;
+}
+
+.section__chech-login {
+  color: #ff4820;
+}
+
+form label {
+  color: #fff;
+  margin-bottom: 0.12rem;
+}
+
+.section__input-classes{
+  width: 100%;
+  font-family: var(--font-family);
+  font-size: 22px;
+  line-height: 27px;
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  border-radius: 5px;
+  padding: 0.25rem;
+  outline: none;
+  color: #fff;
+}
+
+.section__buuton-login,
+textarea {
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+label,
+.section__buuton-login {
+  margin-top: 1rem;
+}
+
+.section__buuton-login {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
+}
