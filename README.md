@@ -40,9 +40,9 @@ localhost:3000/ideas
 
 # Reflection
 - **Context for the Project:**
-  - This project was a 3-week long endeavor undertaken during my third module at Turing School of Software and Design.
+  - This project was a 3-week long endeavor undertaken during my .
 - **Project Goals:**
-  - The initial goal was to build an application that allowed users to pull data from the Twitter API based on their interests, such as 'most tagged users'.
+  - The initial goal was to build an application that allowed users to have access to page who have Login and register, user have interacios UI with .
 - **Challenges and Learning Experience:**
   - Authentication posed a significant challenge, leading to a deep dive into OAuth, Auth0, and two-factor authentication options.
   - Due to project time constraints, authentication was temporarily tabled in favor of focusing on data visualization from API parts accessible without authentication.
