@@ -39,12 +39,21 @@ npm start
 localhost:3000/ideas
 
 # Reflection
-What was the context for this project? (ie: was this a side project? was this for Turing? was this for an experiment?)
-What did you set out to build?
-Why was this project challenging and therefore a really good learning experience?
-What were some unexpected obstacles?
-What tools did you use to implement this project?
-This might seem obvious because you are IN this codebase, but to all other humans now is the time to talk about why you chose webpack instead of create react app, or D3, or vanilla JS instead of a framework etc. Brag about your choices and justify them here.
+- **Context for the Project:**
+  - This project was a 3-week long endeavor undertaken during my third module at Turing School of Software and Design.
+- **Project Goals:**
+  - The initial goal was to build an application that allowed users to pull data from the Twitter API based on their interests, such as 'most tagged users'.
+- **Challenges and Learning Experience:**
+  - Authentication posed a significant challenge, leading to a deep dive into OAuth, Auth0, and two-factor authentication options.
+  - Due to project time constraints, authentication was temporarily tabled in favor of focusing on data visualization from API parts accessible without authentication.
+- **Unexpected Obstacles:**
+  - Authentication complexities and the need for a workaround due to time constraints.
+- **Tools Used:**
+  - Technologies implemented include React, React-Router 4.0, Redux, LoDash, D3, and a significant amount of VanillaJS, JSX, and CSS.
+- **Technology Choices:**
+  - Utilized create-react-app to minimize initial setup and allocate more time to exploring advanced concepts.
+  - Chose specific libraries/frameworks/tools (e.g., D3) based on their suitability for the project's requirements and learning goals.
+  - Considered handrolling a webpack.config.js in the next iteration to deepen understanding of the build process.
 
 ## Example:
 This was a 3 week long project built during my third module at Turing School of Software and Design. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.
